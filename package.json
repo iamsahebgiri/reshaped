@@ -11,10 +11,12 @@
   "dependencies": {
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "reshaped": "file:vendor/reshaped-react-v1.5.0.tgz"
   },
   "devDependencies": {
     "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0"
+    "eslint-config-next": "12.3.0",
+    "next-transpile-modules": "^9.0.0"
   }
 }
