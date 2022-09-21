@@ -1,0 +1,21 @@
+.container {
+  --sidebar-w: 18rem;
+}
+
+.sidebar {
+  background-color: var(--rs-color-background-page);
+  border-right: 1px solid var(--rs-color-border-neutral-faded);
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  width: var(--sidebar-w);
+  z-index: 1;
+}
+
+.main {
+  background-color: var(--rs-color-background-neutral-faded);
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+}

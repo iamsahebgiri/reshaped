@@ -1,21 +1,29 @@
-import { AspectRatio, Card, Container, Frame, Image, Reshaped } from "reshaped";
+import { Container, Frame, Reshaped, Stack, Text } from "reshaped";
+import PostCard from "../components/PostCard";
+import SidebarLayout from "../layouts/SidebarLayout";
 
 const Home = () => {
   return (
-    <Reshaped theme="reshaped">
-      <Container width="652px">
-        <Frame width="50%">
-          <Card padding={0}>
-            <AspectRatio ratio={16 / 9}>
-              <Image src="https://reshaped.so/img/examples/image-retina.webp" />
-            </AspectRatio>
-            <Frame padding={4}>
-              Located in a quiet street in hip and happening Amsterdam East near
-              the Beukenplein and Oosterpark.
-            </Frame>
-          </Card>
-        </Frame>
-      </Container>
+    <Reshaped theme="quizzer">
+      <SidebarLayout>
+        <Container>
+          <Frame padding={[12, 8]}>
+            <Text variant="title-2">Welcome back, Saheb!</Text>
+            <Text variant="body-1" color="neutral-faded">
+              All the best because #PaperPhodnaHai
+            </Text>
+
+            {/* <Container width="600px">
+              <Stack>
+                <PostCard />
+                <PostCard />
+                <PostCard />
+                <PostCard />
+              </Stack>
+            </Container> */}
+          </Frame>
+        </Container>
+      </SidebarLayout>
     </Reshaped>
   );
 };

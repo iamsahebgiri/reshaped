@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:themes": "reshaped theming --output themes"
   },
   "dependencies": {
     "next": "12.3.0",
@@ -15,6 +16,8 @@
     "reshaped": "file:vendor/reshaped-react-v1.5.0.tgz"
   },
   "devDependencies": {
+    "@iconify/icons-fluent": "^1.2.17",
+    "@iconify/react": "^4.0.0",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
     "next-transpile-modules": "^9.0.0"
